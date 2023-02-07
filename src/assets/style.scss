@@ -1,21 +1,28 @@
+
 .App {
   width: 100vw;
   height: 100vw;
   display: flex;
   justify-content: center;
   font-family: Arial, sans-serif;
+  background-color: rgb(244, 215, 153);
 
 }
 
+.container {
+  width: 85vw;
+  border: solid;
+  border-color:#031b00 ;
+}
 
 #light {
-  background-color: #ffffff;
+  background-color: rgb(247, 234, 205);
   color: #031b00;
 }
 
 #dark {
   background-color: #031b00;
-  color: #ffffff;
+  color: rgb(247, 234, 205);
 }
 
 /* Style des onglets */
@@ -24,24 +31,28 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .tabs li {
+  display: flex;
+  justify-content: center;
   flex: 1;
   text-align: center;
   padding: 1em 0;
 }
 
 .tabs a {
-  color: #ffffff;
+
   text-decoration: none;
   display: block;
+  
 }
-
-/* Style pour l'onglet sélectionné */
-.tabs .selected a {
-  background-color: #ffffff;
-  color: #006400;
+#light .tabs a{
+  color: #031b00;
+}
+#dark .tabs a {
+  color: rgb(244, 215, 153);;
 }
 
 .form-switch{
@@ -54,8 +65,18 @@
 }
 .switch{
   display:flex;
-  width: 100vw;
-  height: 100vw;
+  width: 10vw;
+  height: 10vw;
   justify-content:end;
   align-items: baseline;
+}
+.agency {
+  display: flex;
+  justify-content: center;
+  font-size: xxx-large;
+}
+
+.container-small {
+  width: 80vw;
+ 
 }

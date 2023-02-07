@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <ul className="tabs">
-        <li className="selected"><Link to="/">Home</Link></li>
+        <li className="nav-title"><Link to="/">Home</Link></li>
         <li><Link to="/works">Works</Link></li>
         <li><Link to="/about">About us</Link></li>
         <li>  
