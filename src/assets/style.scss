@@ -1,0 +1,61 @@
+.App {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+
+}
+
+
+#light {
+  background-color: #ffffff;
+  color: #031b00;
+}
+
+#dark {
+  background-color: #031b00;
+  color: #ffffff;
+}
+
+/* Style des onglets */
+.tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  flex: 1;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.tabs a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style pour l'onglet sélectionné */
+.tabs .selected a {
+  background-color: #ffffff;
+  color: #006400;
+}
+
+.form-switch{
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 44px;
+}
+.switch{
+  display:flex;
+  width: 100vw;
+  height: 100vw;
+  justify-content:end;
+  align-items: baseline;
+}
