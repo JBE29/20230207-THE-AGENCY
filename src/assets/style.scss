@@ -11,8 +11,10 @@
 
 .container {
   width: 85vw;
-  border: solid;
-  border-color:#031b00 ;
+  height: 100vw;
+  border: 1rem solid;
+  border-color:#031b00 ; 
+  margin-left: 25px; 
 }
 
 #light {
@@ -79,4 +81,9 @@
 .container-small {
   width: 80vw;
  
+}
+
+.navbar {
+  
+  
 }

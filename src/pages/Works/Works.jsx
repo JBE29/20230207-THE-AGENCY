@@ -10,7 +10,7 @@ const Works = () => {
             <p>Découvrez pas à pas comment nous avons été présents pour lancer vos marques préférées.</p>
             <div>
                 {data.map((work) => (
-                    <Link className="" key={work.id} to={"/works/" + work.path}>
+                    <Link className="container-small" key={work.id} to={"/works/" + work.path}>
                        <h1> {work.company} </h1>
                     </Link>
                 ))}

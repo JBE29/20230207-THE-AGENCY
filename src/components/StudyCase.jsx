@@ -7,7 +7,7 @@ const StudyCase = () => {
   const currentCase = data.find((page) => page.path === path);
 
   return (
-    <div className="container">
+    <div className="container-small">
       <h1 className="text2">{currentCase.company}</h1>
       <br />
       <p className="text">{currentCase.title}</p>

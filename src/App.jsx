@@ -20,22 +20,22 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="" id={theme}>
-        <h1 className="agency">THE AGENCY</h1>
-        <div className='switch'>
-          <label>{theme === "light" ? "Light mode" : "Dark mode"}</label>
-          <ReactSwitch
-            onChange={toggleTheme}
-            checked={theme === "dark"}
-          />
-        </div>
         <div className="container">
+          <h1 className="agency">THE AGENCY</h1>
+          <div className='switch'>
+            <label>{theme === "light" ? "Light mode" : "Dark mode"}</label>
+            <ReactSwitch
+              onChange={toggleTheme}
+              checked={theme === "dark"}
+            />
+          </div>
           <Navbar />
           <div className="container-small">
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/works" element={<Works />} />
-              <Route path="/works/:path" element={<StudyCase />} />
+              <Route path="/works/:slug" element={<StudyCase />} />
             </Routes>
           </div>
         </div>
